@@ -5,9 +5,10 @@ if len(sys.argv) == 2 and len(sys.argv) <= 2:
 elif len(sys.argv) == 1:
   a = abs(int(input("Enter an upper limit, or else:")))
 else: 
-  print("You entered too many arguments. Do less.")
+  print("You entered too many arguments. Do one.")
+  sys.exit()
 
-for n in range(1,a):
+for n in range(1,a+1):
     if n % 5 == 0 and n % 3 == 0:
         print("Fizz Buzz")
     elif n % 3 == 0:
